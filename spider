@@ -92,7 +92,6 @@ if __name__ == '__main__':
     print('domain:', domain)
     key_tmp  = tldextract.extract(domain)
     # 用于排除外链，爬取的url不包含key的都会被舍弃。
-    # 'https://www.xiaogeng.com.cn/admin?id=6'==>'www.xiaogeng.com.cn'
     key = key_tmp.subdomain + '.' + key_tmp.domain+'.' + key_tmp.suffix 
     print('key:', key)
     print('开始爬取...\n')
