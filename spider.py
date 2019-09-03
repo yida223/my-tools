@@ -9,12 +9,7 @@ import re
 import time
 import sys
 import requests
-try :
-    import tldextract
-except:
-    print('module tldextract not fount \nyou can try pip install tldextract')
-    sys.exit()
-
+import tldextract
 
 def domain_get():
     '''
